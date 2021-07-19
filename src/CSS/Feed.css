@@ -1,0 +1,51 @@
+.feed {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    /* overflow: scroll; */
+  }
+  
+  .feed__avatar {
+    margin-left: 20px;
+  }
+  
+  .feed:hover {
+    cursor: pointer;
+    background-color: #444;
+  }
+  
+  .feed__info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .feed__info__row1 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+  .feed__info__row2 > .MuiSvgIcon-root {
+    color: white;
+  }
+  
+  .feed__info__row1 > h4,
+  .feed__info__row1 > h6 {
+    padding-left: 10px;
+    color: white;
+  }
+  
+  .feed__info__row2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .feed__info__row2 > h3 {
+    padding-left: 10px;
+    color: #222;
+    padding-right: 10px;
+    font-size: 9px;
+  }
+  

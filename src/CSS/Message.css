@@ -1,0 +1,105 @@
+.message {
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px 5px;
+  }
+  
+  .message__avatar {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-self: flex-start;
+    align-items: center;
+  }
+  .message__avatar > .MuiAvatar-root {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+  }
+  .message__avatar > h5 {
+    margin-top: 5px;
+    font-size: 9px;
+    color: #777;
+  }
+  
+  .message > .message__content::before {
+    content: "";
+    position: relative;
+    right: 15px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-right: 6px solid white;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .message__content {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: white;
+    max-width: 300px;
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+  }
+  
+  .message__content > h5 {
+    font-size: 11px;
+    font-weight: 500;
+  }
+  
+  .message__me {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin: 10px 5px;
+  }
+  
+  .message__me > .message__content {
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(48, 180, 48);
+    color: white;
+    padding-bottom: 10px;
+  }
+  
+  .message__me > .message__content > img {
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .message__me > .message__content::before {
+    content: "";
+    position: relative;
+    right: -152px;
+    top: 3px;
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 6px solid rgb(48, 180, 48);
+    border-bottom: 3px solid transparent;
+  }
+  
+  .message__content__image__banner {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 5px auto;
+  }
+  .message__content__image__banner > h6 {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  .message__content > button {
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    padding: 5px 0;
+    width: 80%;
+    background-color: rgb(35, 119, 35);
+    color: white;
+  }
+  
